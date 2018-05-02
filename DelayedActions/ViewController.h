@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *Label;
 
+- (IBAction)PerformActionDelay:(id)sender;
 
 @end
 

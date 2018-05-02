@@ -26,4 +26,13 @@
 }
 
 
+- (IBAction)PerformActionDelay:(id)sender {
+    
+    [self performSelector:@selector(Delay) withObject:nil afterDelay:5.0];
+    
+}
+
+-(void)Delay{
+    self.Label.text = @"This text was delayed";
+}
 @end
